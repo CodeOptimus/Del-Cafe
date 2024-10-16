@@ -1,0 +1,11 @@
+#explore-foods {
+    padding: 10rem 0;
+}
+
+#explore-foods article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 75%;
+    margin: 0 auto;
+}
