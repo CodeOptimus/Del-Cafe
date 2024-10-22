@@ -9,3 +9,53 @@
     max-width: 75%;
     margin: 0 auto;
 }
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #ham-menu {
+        display: block;
+      }
+    
+      .menu {
+        display: none;
+      } 
+
+
+    #explore-foods article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #explore-foods h3 {
+        font-size: 1.1rem;
+        font-weight: 900;
+        left: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+    #explore-foods h3 {
+        font-size: 1.2rem;
+        left: 4rem;
+    }
+}
+
+@media (max-width: 479px) {
+    #ham-menu {
+        display: block;
+      }
+    
+      .menu {
+        display: none;
+      }
+
+    #explore-foods article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #explore-foods h3 {
+        font-size: 0.8rem;
+        font-weight: 900;
+        left: 30%;
+        bottom: 1rem;
+    }
+}

@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/shared.css">
+    <link rel="stylesheet" href="./Styles/order.css">
     <title>Order Page</title>
 </head>
 <body>
-    
+    <!-- navbar starts here -->
+    <section id="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="./Images/My_Logo.png" alt="coffee logo" />
+            </a>
+          </div>
+          <div class="menu text-right">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./categories.html">Categories</a></li>
+              <li><a href="./foods.html">Foods</a></li>
+              <li><a href="./order.html">Order</a></li>
+            </ul>
+          </div>
+          <div id="ham-menu">
+            <img src="./Images/icons8-hamburger-menu-48.svg" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- navbar ends here -->
+
+    <main>
+        <h1>Your Order</h1>
+        <form action="#">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="full-name"> Fullname <br>
+                    <input type="text" id="full-name" placeholder="Jane Doe" required>
+                </label> <br>
+                <label for="telephone"> Email <br>
+                    <input type="email" id="email" placeholder="janedoe@gmail.com" required>
+                </label><br>
+                <label for="telephone"> Telephone <br>
+                    <input type="number" id="telephone" placeholder="0023894576" required>
+                </label>
+            </fieldset> 
+            <fieldset>
+                <legend>Select food</legend>
+                <label for="foods" id="select-food"> Food <br>
+                    <select name="food-selection" id="foods">
+                        <option value="">Select Food</option>
+                        <option value="friedrice">Fried Rice</option>
+                        <option value="plainrice">Plain Rice</option>
+                        <option value="jollofrice">Jollof Rice</option>
+                        <option value="grilledchicken">Grilled Chicken</option>
+                        <option value="fries">Fried Potato</option>
+                        <option value="pizza">Pizza</option>
+                    </select>
+                </label><br>
+                <label for="address"> Address</label> <br>
+                    <textarea placeholder="type your current address here" rows="5" name="address">
+                </textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/portia-mawuena"><img src="./Images/icons8-linkedin-48.png" alt="" /></a>
+          <a href=""><img src="./Images/icons8-instagram-48.png" alt="" /></a>
+          <a href=""><img src="./Images/icons8-pinterest-48.png" alt="" /></a>
+        </div>
+        <p>All rights reserved. Made with 💖 Optimus</p>
+      </footer>
 </body>
 </html>
