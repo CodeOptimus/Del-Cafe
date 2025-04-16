@@ -65,6 +65,7 @@ footer .socials {
 @media (min-width: 480px) and (max-width: 768px) {
     main {
         padding: 2rem;
+        margin-top: 6rem;
     }
     
     form {
